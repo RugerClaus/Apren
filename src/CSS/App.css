@@ -1,6 +1,9 @@
+@import 'Pages/Home.css';
+
 * {
   margin: 0;
   padding: 0;
+
 }
 
 .app {
@@ -12,17 +15,15 @@
 .headerWrapper {
   grid-template-rows: repeat(2,1fr);
   display:grid;
-  background-color: yellow;
   max-height: 15vh;
 }
 .headerWrapper .header {
   grid-row: 1;
   height: 10vh;
-  width: 80%;
+  width: 100%;
   background-color: white;
   background-image: url('https://static.wixstatic.com/media/738d32_d73fe3585251416aa916c3da46f92b1a.jpg/v1/fill/w_954,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/738d32_d73fe3585251416aa916c3da46f92b1a.jpg');
   background-repeat: no-repeat;
-  background-origin: center;
   background-size: contain;
   background-position: center;
   margin-left: auto;
@@ -52,9 +53,11 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 .navItem:hover {
-  animation: changeColor 0.5s;
+  animation: changeColor 0.7s;
   color: yellow;
   cursor: pointer;
   background-color: black;

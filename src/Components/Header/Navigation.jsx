@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navigation() {
   return (
     <nav className='nav'>
       <ul>
-        <li className='navItem'>Home</li>
-        <li className='navItem'>About Us</li>
-        <li className='navItem'>Our Services</li>
-        <li className='navItem'>Outreach</li>
-        <li className='navItem'>Clients & Partners</li>
-        <li className='navItem'>Contact Us</li>
+        <Link className="navItem" to='/' className='navItem'>Home</Link>
+        <Link className="navItem" to='/About' className='navItem'>About Us</Link>
+        <Link className="navItem" to='/Services' className='navItem'>Our Services</Link>
+        <Link className="navItem" to='/Outreach' className='navItem'>Outreach</Link>
+        <Link className="navItem" to='/Clients' className='navItem'>Clients & Partners</Link>
+        <Link className="navItem" to='/Contact' className='navItem'>Contact Us</Link>
       </ul>
     </nav>
   )
