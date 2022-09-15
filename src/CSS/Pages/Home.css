@@ -1,3 +1,6 @@
-body{
-    background : ('components/img/wallpaperbetter.jpg');
+.app .home {
+  width: 100vw;
+  height: 80vh;
+  bottom: 0;
+  position: absolute;
 }
