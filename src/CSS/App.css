@@ -7,45 +7,50 @@
 }
 
 .app {
-  background-color: rgb(140,136,167);
   min-width: 100vw;
   min-height: 100vh;
   color: black;
 }
 .headerWrapper {
-  grid-template-rows: repeat(2,1fr);
-  display:grid;
-  max-height: 15vh;
+  background-color: #eceef2;
+  display: grid;
+  grid-template-columns:repeat(2,2fr);
+  margin: 0;
+  /*position: sticky;
+  top: 0;
+  z-index: 1;*/
+  height: fit-content;
+  position: fixed;
+  top: 0;  
+  width: 100vw;
+  height: 15vh;
 }
+
 .headerWrapper .header {
   grid-row: 1;
   height: 10vh;
-  width: 100%;
-  background-color: white;
-  background-image: url('https://static.wixstatic.com/media/738d32_d73fe3585251416aa916c3da46f92b1a.jpg/v1/fill/w_954,h_48,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/738d32_d73fe3585251416aa916c3da46f92b1a.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-left: auto;
-  margin-right:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 50%;
+  color: white;
+  background-color: black;
 }
 .headerWrapper .nav {
-  position: sticky;
+  grid-column: 2;
+  padding: 10px;
   display: flex;
-  min-height: fit-content;
-  max-height: 5vh;
-
-  
+  width: 50%;
 }
 .headerWrapper .nav ul {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   list-style-type: none;
   align-items: center;
-  gap: 5px;
+  gap: 1.5rem;
   justify-content: center;
-  background-color: whitesmoke;
-  width: 100vw;
+  width: 100%;
 }
 .navItem {
   height: 100%;
